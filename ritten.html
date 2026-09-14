@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veel Auto — Ritten Mockup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-title">Veel Auto</div><div class="brand-sub">Taxibedrijf · Systeem</div></div>
+    <div class="nav-label">Navigatie</div>
+    <nav class="nav">
+      <a class="nav-item" href="index.html"><div class="nav-main">Dashboard</div><div class="nav-sub">Overzicht &amp; stats</div></a>
+      <a class="nav-item active" href="ritten.html"><div class="nav-main">Ritten</div><div class="nav-sub">CRUD beheer</div></a>
+    </nav>
+    <div class="side-footer"><div class="statusline"><i class="dot"></i><span>24/7 actief</span></div><div class="stamp">14 sep 2026 · 09:42</div></div>
+  </aside>
+
+  <section class="app">
+    <header class="topbar">
+      <div class="top-left"><span class="top-title">Ritten — CRUD</span><span class="top-note">· Taxibedrijf Veel Auto Wireframe</span></div>
+      <div class="top-right"><span class="email">admin@veelautobv.nl</span><span class="avatar">VA</span></div>
+    </header>
+
+    <main class="rides-wrap">
+      <section class="rides-toolbar">
+        <div><div class="eyebrow">CRUD — Ritbeheer</div><h2>Alle ritten</h2></div>
+        <div class="tools"><div class="fake-input">Zoek op naam, rit-ID, adres</div><div class="small-btn">+ Nieuwe rit</div></div>
+      </section>
+      <section class="tabs"><div class="tab active">Alle <em>(7)</em></div><div class="tab">Gepland <em>(3)</em></div><div class="tab">Toegewezen <em>(2)</em></div><div class="tab">Afgerond <em>(2)</em></div></section>
+      <section class="rides-table-wrap">
+        <table class="table wide-table">
+          <thead><tr><th>Rit</th><th>Klant</th><th>Telefoon</th><th>Ophaaladres</th><th>Bestemmingsadres</th><th>Datum</th><th>Tijd</th><th>Chauffeur</th><th>Auto</th><th>Prijs</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td class="strong">R-001</td><td class="name">Jan de Vries</td><td class="muted phone">+31 6 12 34 56 78</td><td class="muted address"><div class="truncate">Stationsplein 1, Amsterdam</div></td><td class="muted address"><div class="truncate">Schiphol Airport T2</div></td><td class="muted nowrap">09-14</td><td class="muted">06:30</td><td class="driver"><b>Ahmed Yilmaz</b></td><td>VA-001</td><td class="strong nowrap">€ 48.50</td><td><span class="badge done">Afgerond</span></td></tr>
+            <tr><td class="strong">R-002</td><td class="name">Lisa Bakker</td><td class="muted phone">+31 6 23 45 67 89</td><td class="muted address"><div class="truncate">Keizersgracht 45, Amsterdam</div></td><td class="muted address"><div class="truncate">RAI Amsterdam</div></td><td class="muted nowrap">09-14</td><td class="muted">09:00</td><td class="muted">—</td><td class="muted">—</td><td class="strong nowrap">€ 22.00</td><td><span class="badge plan">Gepland</span></td></tr>
+            <tr><td class="strong">R-003</td><td class="name">Mark Peeters</td><td class="muted phone">+31 6 34 56 78 90</td><td class="muted address"><div class="truncate">Leidsestraat 12, Amsterdam</div></td><td class="muted address"><div class="truncate">VU Medisch Centrum</div></td><td class="muted nowrap">09-14</td><td class="muted">10:15</td><td class="driver"><b>Fatima Boussaid</b></td><td>VA-007</td><td class="strong nowrap">€ 31.75</td><td><span class="badge assigned">Toegewezen</span></td></tr>
+            <tr><td class="strong">R-004</td><td class="name">Sophie van Dam</td><td class="muted phone">+31 6 45 67 89 01</td><td class="muted address"><div class="truncate">Jordaan 88, Amsterdam</div></td><td class="muted address"><div class="truncate">Amsterdam Centraal</div></td><td class="muted nowrap">09-14</td><td class="muted">12:00</td><td class="driver"><b>Piet Jansen</b></td><td>VA-003</td><td class="strong nowrap">€ 14.00</td><td><span class="badge done">Afgerond</span></td></tr>
+            <tr><td class="strong">R-005</td><td class="name">Tom Hendriks</td><td class="muted phone">+31 6 56 78 90 12</td><td class="muted address"><div class="truncate">Zuidas Tower B, Amsterdam</div></td><td class="muted address"><div class="truncate">Amstel Hotel</div></td><td class="muted nowrap">09-14</td><td class="muted">14:30</td><td class="muted">—</td><td class="muted">—</td><td class="strong nowrap">€ 19.50</td><td><span class="badge plan">Gepland</span></td></tr>
+            <tr><td class="strong">R-006</td><td class="name">Nora Willems</td><td class="muted phone">+31 6 67 89 01 23</td><td class="muted address"><div class="truncate">Vondelpark 1, Amsterdam</div></td><td class="muted address"><div class="truncate">Amsterdam Arena</div></td><td class="muted nowrap">09-14</td><td class="muted">17:00</td><td class="driver"><b>Daan Visser</b></td><td>VA-004</td><td class="strong nowrap">€ 27.25</td><td><span class="badge assigned">Toegewezen</span></td></tr>
+            <tr><td class="strong">R-007</td><td class="name">Carlos Ruiz</td><td class="muted phone">+31 6 78 90 12 34</td><td class="muted address"><div class="truncate">Plantage Middenlaan 2, Amsterdam</div></td><td class="muted address"><div class="truncate">Schiphol Airport T3</div></td><td class="muted nowrap">09-15</td><td class="muted">05:45</td><td class="muted">—</td><td class="muted">—</td><td class="strong nowrap">€ 52.00</td><td><span class="badge plan">Gepland</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <footer class="statusbar">7 van 7 ritten weergegeven</footer>
+    </main>
+  </section>
+</div>
+</body>
+</html>
