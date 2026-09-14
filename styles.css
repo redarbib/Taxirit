@@ -1,40 +1,118 @@
+/* Veel Auto plain static mockup. No framework, no generated utility CSS. */
 :root {
-  --black:#050505;
-  --ink:#0b0b0b;
-  --muted:#87909a;
-  --muted2:#b5bbc2;
-  --line:#dfe3e7;
-  --soft:#f6f6f2;
-  --white:#fff;
-  --green:#16c46a;
+  --black:#000; --white:#fff; --page:#f6f6f2;
+  --line:#dfe3e7; --muted:#8f98a1; --faint:#f2f3f4; --green:#16b85f;
 }
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:var(--soft);color:var(--ink)}
-body{font-family:Inter,Arial,sans-serif;font-size:12px}
-a{color:inherit;text-decoration:none}
-.mono{font-family:"JetBrains Mono","SFMono-Regular",Consolas,"Liberation Mono",monospace}
-.shell{min-height:100vh;display:flex}
-.sidebar{position:fixed;inset:0 auto 0 0;width:200px;background:#000;color:#fff;display:flex;flex-direction:column;z-index:20}
-.brand{height:64px;padding:19px 20px 14px;border-bottom:1px solid #1b1b1b}
-.brand-title{font:700 12px/1.2 "JetBrains Mono",Consolas,monospace;letter-spacing:.16em;text-transform:uppercase}
-.brand-sub{margin-top:4px;color:#555;font:400 9px/1.2 "JetBrains Mono",Consolas,monospace}
-.nav-label{padding:20px 20px 8px;color:#444;font:700 9px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.16em;text-transform:uppercase}
-.nav{padding:0 8px;flex:1}
-.nav-item{display:block;padding:10px 12px;margin-bottom:2px;color:#666}
-.nav-item.active{background:#fff;color:#000}
-.nav-main{font:700 10px/1.2 "JetBrains Mono",Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}
-.nav-sub{margin-top:4px;color:#444;font:400 9px/1.2 "JetBrains Mono",Consolas,monospace}
-.nav-item.active .nav-sub{color:#666}
-.side-footer{padding:16px 20px;border-top:1px solid #1a1a1a;color:#555;font:400 9px/1.3 "JetBrains Mono",Consolas,monospace}
-.statusline{display:flex;align-items:center;gap:7px;margin-bottom:7px}.dot{width:6px;height:6px;border-radius:50%;background:#39d47a}.stamp{color:#333}
-.app{margin-left:200px;min-height:100vh;width:calc(100% - 200px)}
-.topbar{height:48px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px}
-.top-left,.top-right{display:flex;align-items:center;gap:10px}.top-title{font:700 12px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}.top-note,.email{color:#a0a7ae;font:400 9px/1 "JetBrains Mono",Consolas,monospace}.avatar{width:28px;height:28px;background:#000;color:#fff;display:grid;place-items:center;font:700 9px/1 "JetBrains Mono",Consolas,monospace}
-.content{padding:32px 32px 64px}.eyebrow{color:#9aa2ab;font:700 9px/1.4 "JetBrains Mono",Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}.hero{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:30px}.hero h1{margin:4px 0 5px;font:700 30px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:-.04em;text-transform:uppercase}.hero p{margin:0;color:#707982;font:400 11px/1.35 "JetBrains Mono",Consolas,monospace}.btn-black{display:inline-block;background:#000;color:#fff;padding:13px 20px;font:700 10px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.13em;text-transform:uppercase}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:30px}.kpi{min-height:112px;background:#fff;border:1px solid var(--line);padding:20px}.kpi.dark{background:#000;border-color:#000;color:#fff}.kpi-label{color:#99a2ab;font:700 9px/1.2 "JetBrains Mono",Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}.kpi-value{margin-top:5px;font:700 30px/1 "JetBrains Mono",Consolas,monospace}.kpi-note{margin-top:5px;color:#76808a;font:400 9px/1.2 "JetBrains Mono",Consolas,monospace}.dark .kpi-note,.dark .kpi-label{color:#7f8790}
-.grid-main{display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:24px}.panel{background:#fff;border:1px solid var(--line)}.panel-head{height:48px;padding:0 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.panel-title{font:700 10px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}.panel-link{color:#9aa2ab;text-decoration:underline;font:400 9px/1 "JetBrains Mono",Consolas,monospace}.stack{display:grid;gap:16px}.pad{padding:20px}
-.table{width:100%;border-collapse:collapse;table-layout:fixed}.table th{background:#fafafa;color:#9aa2ab;font:700 9px/1.15 "JetBrains Mono",Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;text-align:left;padding:11px 16px;border-bottom:1px solid #e9ecef}.table td{font:400 10px/1.45 "JetBrains Mono",Consolas,monospace;padding:12px 16px;border-bottom:1px solid #f0f1f2;vertical-align:middle}.table td.strong{font-weight:700}.table td.muted{color:#67727c}.table tr:last-child td{border-bottom:0}.nowrap{white-space:nowrap}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.badge{display:inline-block;padding:2px 7px;font:700 8px/1.25 "JetBrains Mono",Consolas,monospace;letter-spacing:.11em;text-transform:uppercase}.badge.plan{border:1px solid #c8ced4;color:#7e8790;background:#fff}.badge.assigned{background:#000;color:#fff}.badge.done{background:#f2f3f4;color:#a2a9af}.badge.free{border:1px solid #8ee9b1;background:#f2fff6;color:#12a850}.badge.busy{border:1px solid #dfe3e7;color:#9ca4ab;background:#fff}
-.availability{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.statbox{border:1px solid var(--line);padding:15px 10px;text-align:center}.statbox b{display:block;font:700 24px/1 "JetBrains Mono",Consolas,monospace}.statbox span{display:block;margin-top:6px;color:#a0a8af;font:400 8px/1.2 "JetBrains Mono",Consolas,monospace;text-transform:uppercase}.mini-row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid #f1f2f3;font:400 10px/1.2 "JetBrains Mono",Consolas,monospace}.mini-row:last-child{border-bottom:0}.info-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #f1f2f3;font:400 9px/1.2 "JetBrains Mono",Consolas,monospace}.info-row:last-child{border-bottom:0}.info-row span:first-child{color:#9ba3ab}.info-row strong{font-weight:700}
-/* rides page */
-.rides-wrap{background:#fff;min-height:calc(100vh - 48px);display:flex;flex-direction:column}.rides-toolbar{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px}.rides-toolbar h2{margin:3px 0 0;font:700 18px/1 "JetBrains Mono",Consolas,monospace;text-transform:uppercase}.tools{display:flex;gap:12px;align-items:center}.fake-input{width:230px;border:1px solid #cfd5db;color:#89929b;padding:10px 11px;font:400 10px/1 "JetBrains Mono",Consolas,monospace}.small-btn{background:#000;color:#fff;padding:11px 16px;font:700 9px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.13em;text-transform:uppercase}.tabs{height:42px;padding-left:24px;display:flex;align-items:stretch;border-bottom:1px solid var(--line)}.tab{display:flex;align-items:center;padding:0 20px;color:#a1a8af;border-bottom:2px solid transparent;font:400 9px/1 "JetBrains Mono",Consolas,monospace;letter-spacing:.11em;text-transform:uppercase}.tab.active{color:#000;border-bottom-color:#000;font-weight:700}.tab em{font-style:normal;opacity:.4;margin-left:6px}.wide-table{table-layout:auto}.wide-table th{padding:11px 11px;font-size:8px;white-space:nowrap}.wide-table td{padding:11px 11px;font-size:9px}.wide-table .name{max-width:90px}.wide-table .address{max-width:130px}.wide-table .phone{max-width:100px}.wide-table .driver{max-width:95px}.rides-table-wrap{flex:1;overflow:hidden;background:#fff}.statusbar{height:30px;border-top:1px solid var(--line);background:#fafafa;padding:9px 24px;color:#a1a8af;font:400 8px/1 "JetBrains Mono",Consolas,monospace}
-@media(max-width:980px){.sidebar{width:150px}.app{margin-left:150px;width:calc(100% - 150px)}.content{padding:24px 20px}.kpis{grid-template-columns:repeat(2,1fr)}.grid-main{grid-template-columns:1fr}.top-note,.email{display:none}.rides-table-wrap{overflow:auto}}
+
+* { box-sizing:border-box; }
+html, body { margin:0; min-height:100%; }
+body { background:var(--page); color:#0b0b0b; font:12px/1.4 "SFMono-Regular",Consolas,"Liberation Mono",monospace; }
+a { color:inherit; text-decoration:none; }
+
+/* Layout */
+.shell { min-height:100vh; }
+.sidebar {
+  position:fixed; inset:0 auto 0 0; width:200px;
+  display:flex; flex-direction:column; background:var(--black); color:var(--white);
+}
+.app { margin-left:200px; min-height:100vh; }
+.topbar {
+  height:48px; padding:0 24px; display:flex; align-items:center; justify-content:space-between;
+  background:var(--white); border-bottom:1px solid var(--line);
+}
+.top-left, .top-right, .tools { display:flex; align-items:center; gap:10px; }
+.content { padding:32px 32px 64px; }
+
+/* Sidebar */
+.brand, .side-footer { padding:16px 20px; }
+.brand { height:64px; border-bottom:1px solid #1b1b1b; }
+.brand-title, .nav-main, .top-title, .panel-title { font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+.brand-title, .top-title { font-size:12px; }
+.brand-sub, .nav-sub, .side-footer, .top-note, .email { font-size:9px; color:#666; }
+.nav-label, .eyebrow, .kpi-label, .tab, .badge { font-size:9px; letter-spacing:.12em; text-transform:uppercase; }
+.nav-label { padding:20px 20px 8px; color:#444; font-weight:700; }
+.nav { flex:1; padding:0 8px; }
+.nav-item { display:block; padding:10px 12px; margin-bottom:2px; color:#666; }
+.nav-item.active { background:var(--white); color:var(--black); }
+.nav-main { font-size:10px; }
+.nav-sub { margin-top:4px; }
+.side-footer { border-top:1px solid #1a1a1a; }
+.statusline { display:flex; align-items:center; gap:7px; margin-bottom:7px; }
+.dot { width:6px; height:6px; border-radius:50%; background:#39d47a; }
+.stamp { color:#333; }
+.avatar { width:28px; height:28px; display:grid; place-items:center; background:#000; color:#fff; font-size:9px; font-weight:700; }
+
+/* Dashboard */
+.hero { display:flex; align-items:end; justify-content:space-between; margin-bottom:30px; }
+.eyebrow { color:#9aa2ab; font-weight:700; }
+.hero h1 { margin:4px 0 5px; font-size:30px; line-height:1; text-transform:uppercase; }
+.hero p { margin:0; color:#707982; font-size:11px; }
+.btn-black, .small-btn {
+  display:inline-block; padding:12px 18px; background:#000; color:#fff;
+  font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+}
+.btn-black { font-size:10px; } .small-btn { font-size:9px; }
+
+.kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:30px; }
+.kpi { min-height:112px; padding:20px; background:#fff; border:1px solid var(--line); }
+.kpi.dark { background:#000; border-color:#000; color:#fff; }
+.kpi-label { color:#99a2ab; font-weight:700; }
+.kpi-value { margin-top:5px; font-size:30px; line-height:1; font-weight:700; }
+.kpi-note { margin-top:5px; color:#76808a; font-size:9px; }
+.dark .kpi-label, .dark .kpi-note { color:#7f8790; }
+
+.grid-main { display:grid; grid-template-columns:minmax(0,2fr) minmax(260px,1fr); gap:24px; }
+.stack { display:grid; gap:16px; }
+.panel { background:#fff; border:1px solid var(--line); }
+.pad { padding:20px; }
+.panel-head { height:48px; padding:0 20px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+.panel-title { font-size:10px; }
+.panel-link { color:#9aa2ab; font-size:9px; text-decoration:underline; }
+
+/* Tables + status labels */
+.table { width:100%; border-collapse:collapse; table-layout:fixed; }
+.table th, .table td { text-align:left; border-bottom:1px solid #edf0f2; }
+.table th { padding:11px 16px; background:#fafafa; color:#9aa2ab; font-size:9px; letter-spacing:.1em; text-transform:uppercase; }
+.table td { padding:12px 16px; font-size:10px; }
+.table tr:last-child td { border-bottom:0; }
+.strong { font-weight:700; } .muted { color:#67727c; } .nowrap { white-space:nowrap; }
+.truncate { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.badge { display:inline-block; padding:2px 7px; font-size:8px; font-weight:700; }
+.badge.plan, .badge.busy { background:#fff; border:1px solid #cfd5da; color:#879099; }
+.badge.assigned { background:#000; color:#fff; }
+.badge.done { background:var(--faint); color:#a2a9af; }
+.badge.free { background:#f2fff6; border:1px solid #8ee9b1; color:var(--green); }
+
+.availability { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:16px 0; }
+.statbox { padding:15px 10px; text-align:center; border:1px solid var(--line); }
+.statbox b { display:block; font-size:24px; line-height:1; }
+.statbox span { display:block; margin-top:6px; color:#a0a8af; font-size:8px; text-transform:uppercase; }
+.mini-row, .info-row { display:flex; justify-content:space-between; border-bottom:1px solid #f1f2f3; }
+.mini-row { align-items:center; padding:9px 0; font-size:10px; }
+.info-row { padding:10px 0; font-size:9px; }
+.mini-row:last-child, .info-row:last-child { border-bottom:0; }
+.info-row span:first-child { color:#9ba3ab; }
+
+/* Rides page */
+.rides-wrap { min-height:calc(100vh - 48px); display:flex; flex-direction:column; background:#fff; }
+.rides-toolbar { height:74px; padding:0 24px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+.rides-toolbar h2 { margin:3px 0 0; font-size:18px; line-height:1; text-transform:uppercase; }
+.fake-input { width:230px; padding:10px 11px; border:1px solid #cfd5db; color:#89929b; font-size:10px; }
+.tabs { height:42px; padding-left:24px; display:flex; border-bottom:1px solid var(--line); }
+.tab { display:flex; align-items:center; padding:0 20px; color:#a1a8af; border-bottom:2px solid transparent; }
+.tab.active { color:#000; border-bottom-color:#000; font-weight:700; }
+.tab em { margin-left:6px; font-style:normal; opacity:.4; }
+.rides-table-wrap { flex:1; overflow:hidden; }
+.wide-table { table-layout:auto; }
+.wide-table th, .wide-table td { padding:11px; font-size:9px; }
+.wide-table th { font-size:8px; white-space:nowrap; }
+.wide-table .name, .wide-table .driver { max-width:95px; }
+.wide-table .address { max-width:130px; } .wide-table .phone { max-width:100px; }
+.statusbar { height:30px; padding:9px 24px; background:#fafafa; border-top:1px solid var(--line); color:#a1a8af; font-size:8px; }
+
+@media (max-width:980px) {
+  .sidebar { width:150px; } .app { margin-left:150px; }
+  .content { padding:24px 20px; } .kpis { grid-template-columns:repeat(2,1fr); }
+  .grid-main { grid-template-columns:1fr; } .top-note, .email { display:none; }
+  .rides-table-wrap { overflow:auto; }
+}
