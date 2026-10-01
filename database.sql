@@ -1,0 +1,27 @@
+CREATE DATABASE IF NOT EXISTS taxirit
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE taxirit;
+
+CREATE TABLE IF NOT EXISTS ritten (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  customer VARCHAR(150) NOT NULL,
+  pickup VARCHAR(255) NOT NULL,
+  destination VARCHAR(255) NOT NULL,
+  ride_date DATE NULL,
+  ride_time TIME NULL,
+  status ENUM('Gepland', 'Toegewezen', 'Afgerond') NOT NULL DEFAULT 'Gepland',
+    driver_name VARCHAR(150) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(190) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  role ENUM('admin', 'driver') NOT NULL,
+  active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

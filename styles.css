@@ -110,9 +110,52 @@ a { color:inherit; text-decoration:none; }
 .wide-table .address { max-width:130px; } .wide-table .phone { max-width:100px; }
 .statusbar { height:30px; padding:9px 24px; background:#fafafa; border-top:1px solid var(--line); color:#a1a8af; font-size:8px; }
 
+/* Authentication and live dashboard */
+.login-page { display:grid; min-height:100vh; place-items:center; background:#111; }
+.login-box { width:min(390px, calc(100% - 32px)); padding:34px; background:#fff; border:1px solid #dfe3e7; }
+.login-box h1 { margin:8px 0 24px; font-size:28px; line-height:1; text-transform:uppercase; }
+.login-form { display:grid; gap:14px; }
+.login-form label { display:grid; gap:6px; color:#858e97; font-size:9px; letter-spacing:.1em; text-transform:uppercase; }
+.login-form input { padding:12px; border:1px solid #cfd5db; font:12px inherit; }
+.login-form button { padding:13px; border:0; background:#000; color:#fff; cursor:pointer; font:700 10px inherit; letter-spacing:.12em; text-transform:uppercase; }
+.login-error { padding:10px; border-left:3px solid #bd3434; background:#fff3f3; color:#9c3030; font-size:10px; }
+.login-success { padding:10px; border-left:3px solid var(--green); background:#f2fff6; color:#168849; font-size:10px; }
+.login-footer { margin:18px 0 0; color:#777; font-size:10px; text-align:center; }
+.login-footer a { text-decoration:underline; }
+.role-label { padding:10px 14px; background:#000; color:#fff; font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+
+/* Working ride views */
+.rides-wrap { color:#0b0b0b; }
+.rides-toolbar h1 { margin:3px 0 0; font-size:22px; line-height:1; text-transform:uppercase; }
+.role-switch { display:flex; border:1px solid var(--line); }
+.role-link { padding:10px 14px; color:#8b949c; font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+.role-link + .role-link { border-left:1px solid var(--line); }
+.role-link.selected { background:#000; color:#fff; }
+.ride-stats { display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; padding:18px 24px; border-bottom:1px solid var(--line); background:#fafafa; }
+.ride-stats div { padding:10px 14px; border-left:3px solid #000; background:#fff; }
+.ride-stats strong { display:block; font-size:21px; line-height:1; }
+.ride-stats span { display:block; margin-top:5px; color:#8d969d; font-size:9px; text-transform:uppercase; }
+.crud-form { display:grid; grid-template-columns:repeat(7, minmax(100px, 1fr)); gap:8px; padding:18px 24px; border-bottom:1px solid var(--line); background:#f6f6f2; }
+.crud-form input, .crud-form select { min-width:0; width:100%; padding:10px; border:1px solid #cfd5db; background:#fff; color:#111; font:10px inherit; }
+.crud-form button, .actions button { border:0; padding:10px 12px; background:#000; color:#fff; cursor:pointer; font:700 9px inherit; letter-spacing:.08em; text-transform:uppercase; }
+.crud-form button:hover, .actions button:hover { background:#333; }
+.cancel-link { align-self:center; color:#777; font-size:9px; text-decoration:underline; }
+.driver-note { display:flex; justify-content:space-between; gap:20px; padding:16px 24px; border-bottom:1px solid var(--line); background:#f6f6f2; font-size:10px; }
+.driver-note span { color:#76808a; }
+.ride-table { min-width:920px; }
+.ride-table th, .ride-table td { padding:12px 11px; vertical-align:middle; }
+.actions { white-space:nowrap; }
+.actions a, .link-button { margin-right:9px; color:#111; font-size:9px; text-decoration:underline; }
+.actions form { display:inline; }
+.link-button { border:0; padding:0; background:transparent; cursor:pointer; font-family:inherit; }
+.done-button { background:#168849 !important; }
+.empty-state { padding:30px !important; color:#8d969d; text-align:center; }
+
 @media (max-width:980px) {
   .sidebar { width:150px; } .app { margin-left:150px; }
   .content { padding:24px 20px; } .kpis { grid-template-columns:repeat(2,1fr); }
   .grid-main { grid-template-columns:1fr; } .top-note, .email { display:none; }
   .rides-table-wrap { overflow:auto; }
+  .crud-form { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+  .driver-note { display:block; } .driver-note span { display:block; margin-top:7px; }
 }
